@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>code</title>
+	<link type="text/css" rel="stylesheet" href="css/sh_style.css">
+	<script type="text/javascript" src="js/sh_main.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var param = location.search;
+            var filename = '';
+            if (param == "?1"){filename="plot/plot_direction_avg.m"};
+            if (param == "?2"){filename="plot/plot_direction_5avg.m"};
+            if (param == "?3"){filename="plot/plot_direction.m"};
+            if (param == "?01"){filename="processing/average_psd_max_channels.m"};
+            if (param == "?02"){filename="processing/psd_5avg_max_channels.m"};
+            if (param == "?03"){filename="processing/psd_max_channels.m"};
+            var url = "files/source/" + filename;
+            var request = new XMLHttpRequest();
+            var data = ''
+            var that = this
+            request.open("get", url);/*设置请求方法与路径*/
+            request.send(null);/*不发送数据到服务器*/
+            request.overrideMimeType("text/html;charset=gb2312");
+            request.onload = function () {/*XHR对象获取到返回信息后执行*/
+                if (request.status == 200) {/*返回状态为200，即为数据获取成功*/
+                    that.data = request.responseText;
+
+                    var pre=document.getElementsByClassName('pre');
+                    pre[0].innerHTML = that.data;
+                    sh_highlightDocument('js/lang/','.js');
+                }
+            }
+       }
+    </script>
+</head>
+<body>
+	<pre class="sh_c pre"></pre>
+</body>
+
+</html>

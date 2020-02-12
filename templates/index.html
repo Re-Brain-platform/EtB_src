@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>“探索脑”互动教学</title><META Name="keywords" Content="“探索脑”互动教学" />
+
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/mystyle.css" />
+	<link rel="stylesheet" href="css/slick.css" />
+
+	<link rel="stylesheet" href="brain3/Bin/TemplateData/style.css">
+	<link rel="shortcut icon" href="brain3/Bin/TemplateData/favicon.ico">
+	
+	<script src="brain3/Bin/TemplateData/UnityProgress.js"></script>  
+	<script src="brain3/Bin/Build/UnityLoader.js"></script>
+	<script>
+		var gameInstance = UnityLoader.instantiate("gameContainer", "brain3/Bin/Build/Bin.json", {onProgress: UnityProgress});
+	</script>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" media="screen" href="css/iestyle.css" type="text/css" />
+    <![endif]-->
+    
+    <style>
+
+    	.is-ztbox{  background: #EEF1F3; padding: 20px; position: relative;  margin-bottom: 60px; overflow: hidden;  height: 120px; width: 1340px;}
+    	.is-ztbox .blk_29 {zoom: 1; position: relative; height:120px; overflow:hidden;}
+    	.is-ztbox .blk_29 .LeftBotton { background: url(images/butleft.png) center center  no-repeat;  float: left; width: 40px; cursor: pointer; position: absolute; top:42px; height: 40px; left:0px; z-index: 999;}
+    	.is-ztbox .blk_29 .RightBotton {background: url(images/butright.png) center center no-repeat ; float: right; width: 40px; cursor: pointer; position: absolute; top:42px; height: 40px; right:0px; z-index: 999;}
+    	.is-ztbox .blk_29 .Cont {overflow: hidden; width:1200px;}
+    	.is-ztbox .blk_29 .box {float: left; width: 320px; text-align: center; margin-right: 20px;}
+    	.is-ztbox .blk_29 .box img{ width:320px; height:120px;}
+    	.is-ztbox .blk_29 .box a{ color:#333;}
+    	.is-ztbox .blk_29 .box a:hover{ color:#c00; text-decoration:none;}
+    	.is-ztbox .blk_29 .box span{ display:block; height:25px; line-height:25px; background:#f4f4f4; text-align:center;}
+    	.is-ztbox .blk_29 .LeftBotton,.is-ztbox .blk_29 .RightBotton{ display: none;}
+    	.is-ztbox .blk_29:hover .LeftBotton{ display: block;}
+    	.is-ztbox .blk_29:hover .RightBotton{ display: block;}
+    	.button1 {background-color: lightseagreen; margin-top: 5px; list-style-type: none; width: 125px; height: 40px;font-size: 18px; border: none; box-shadow: -2px 0 5px lightsteelblue, 0 -2px 5px lightsteelblue, 0 2px 5px lightsteelblue, 2px 0 5px lightsteelblue;}
+    	.content{display: none;margin-top: 8px;}
+    	.active {background-color: lightsteelblue;}
+    </style>
+
+</head>
+<body style="min-width:1400px;">
+	<div class="header">
+		<div class="container clearfix">
+			<span class="logo fl">
+				<!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+				<a href="index.html">
+					<img src="images/logo.png" alt="" /></a></span>
+					<script language="javascript" src="/system/resource/js/dynclicks.js"></script>
+					<i class="fl linian" style="margin-left:-80px"><img src="images/linian.png" alt="" /></i>
+					
+					<div class="headerRight fr clearfix">
+						<p class="fl juese"><script language="javascript" src="/system/resource/js/openlink.js"></script>
+
+							<a href="http://urp.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41428)">学生</a></li></a>
+
+							<a href="http://urp.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41429)">教工</a></li></a>
+
+							<a href="http://www.tongjiren.org/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41457)">校友</a></li></a>
+
+							<a href="http://www.tongji.edu.cn/xglj/ks1.htm" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41430)">考生</a></li></a>
+
+							<a href="http://www.tongji.edu.cn/xglj/fk.htm" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41431)">访客</a></li></a>
+
+						</p>
+						<ul class="fl mail clearfix">
+
+							<li><a href="https://mail.tongji.edu.cn/coremail/index.jsp" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41432)">同济邮箱</a></li>
+
+							<li class="hotpic">
+								<a href="#">快速通道</a>
+								<div class="xiala" style="display:none;">
+									<i class="kstdsj"></i>
+									<a href="http://myportal.tongji.edu.cn/new/index.html" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41518)">校园门户</a>
+									<a href="http://oa.tongji.edu.cn/login/Login.jsp?logintype=1" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41523)">OA系统</a>
+									<a href="http://www.lib.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41828)">图书馆</a>
+									<a href="http://open.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41522)">同心云</a>
+									<a href="http://service.tongji.edu.cn" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41520)">办事大厅</a>
+									<a href="http://cwc.tongji.edu.cn/WFManager/login.jsp" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41521)">财务系统</a>
+									<a href="https://ids.tongji.edu.cn:8443/nidp/saml2/sso?id=719&amp;sid=0&amp;option=credential&amp;sid=0" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41519)">教务系统</a>
+									<a href="http://nic.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41528)">网络中心</a>
+									<a href="wx.htm" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41527)">同济微信</a>
+									<a href="http://weibo.com/tongjiuniversity" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41524)">同济微博</a>
+									<a href="https://mail.tongji.edu.cn/coremail/index.jsp" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41526)">同济邮箱</a>
+									<a href="http://fund.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41525)">我要捐赠</a>
+									<a href="http://2017.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41736)" style="float: right;">旧站入口</a>
+								</div>
+							</li>
+
+							<li class="hotpic">
+
+								<a href="http://xxgk.tongji.edu.cn/index.php?classid=3059">信息公开</a>
+
+							</li>
+
+						</ul>
+						<ul class="fl tool">
+
+							<li><a href="http://en.tongji.edu.cn" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41434)">English</a></li>
+
+							<li><a href="http://de.tongji.edu.cn/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1454720253, 41435)">Deutsch</a></li>
+
+							<li class="search" id="search">
+								<button><i class="icon-search"><img src="images/icons/icon-sear.png" alt="" /></i></button>
+								<div class="searchBox">
+									<!--<form action="">-->
+									<script type="text/javascript">
+										function _nl_ys_check(){
+
+											var keyword = document.getElementById('showkeycode203864').value;
+											if(keyword==null||keyword==""){
+												alert("请输入你要检索的内容！");
+												return false;
+											}
+											if(window.toFF==1)
+											{
+												document.getElementById("lucenenewssearchkey203864").value = Simplized(keyword );
+											}else
+											{
+												document.getElementById("lucenenewssearchkey203864").value = keyword;            
+											}
+											var  base64 = new Base64();
+											document.getElementById("lucenenewssearchkey203864").value = base64.encode(document.getElementById("lucenenewssearchkey203864").value);
+											new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode203864"));
+											return true;
+										} 
+									</script>
+									<form action="search.jsp?wbtreeid=1001" method="post" id="au7a" name="au7a" onsubmit="return _nl_ys_check()" style="display: inline">
+										<input type="hidden" id="lucenenewssearchkey203864" name="lucenenewssearchkey" value=""><input type="hidden" id="_lucenesearchtype203864" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope203864" name="searchScope" value="0">
+
+										<input name="showkeycode" id="showkeycode203864" type="text" class="motion_1">
+
+										<input type="hidden" src="/system/resource/images/research/seach22.gif" align="absmiddle" style="cursor: hand">
+
+									</form><script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/formfunc.js"></script>
+
+									<i class="close-search"><img src="images/icons/closeicon.png" alt="" /></i>
+									<!--</form>-->
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 代码部分begin -->
+		<div class="nav">
+			<div class="sy1_ul">
+				<a href="index.htm"> <span class="smalllogo fl" onclick="backTop()"><img src="images/smalllogo.png" alt="" /></span></a>
+				<ul class="sy2_inside marL fl">
+
+					<li class="sy1_li navli3"><a class="sy1_tit " href="index.html"><span class="navspan" title="科普教学互动实验区">科普教学互动实验区</span></a>
+					</li>
+
+					<li class="sy1_li navli3"><a class="sy1_tit " href="index2.html"><span class="navspan" title="课程教学实验区">课程教学实验区</span></a>
+					</li>
+
+					<li class="sy1_li navli3"><a class="sy1_tit " href="index3.html"><span class="navspan" title="创新性开放实验区">创新性开放实验区</span></a>
+					</li>
+
+				</ul>
+				<div class="clear"></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="tjyw smark">
+		<div class="container" style="position: relative">
+			<div class="topBox">
+				<div class="title">
+					<h2>
+						<b>科普教学互动实验区</b>
+						<span>科普教学互动实验区</span>
+					</h2>
+				</div>
+			</div>
+			<div style="padding-top:20px;">
+				<button class="button1 active">实验室</button>
+				<button class="button1">脑模型</button>
+
+				<div id="x" class="content" style="text-align: center;display: block">
+					<iframe src="1.html" width="1000" height="660" frameborder="0" name="lab" scrolling="no" style="margin:0 auto"></iframe>
+				</div>
+				<div class="content" style="text-align: center"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container clearfix">
+			<div class="footLogo fl">    
+				<img src="images/footlogo.png" alt="" />
+			</div>
+			<div class="footRight fr clearfix">
+				<script language="javascript" src="/system/resource/js/news/mp4video.js"></script>
+				<div class="footMiddle fl"> 
+					<h3>联系我们</h3> 
+					<p class="address">同济大学新闻中心主办 &nbsp; &nbsp; &nbsp; E-mail:newscenter@tongji.edu.cn</p> 
+					<p class="copyright">Copyright@2018 &nbsp;同济大学版权所有 &nbsp; &nbsp; &nbsp;沪ICP备10014176号 &nbsp; &nbsp;<br>沪公网安备：31009102000038号&nbsp; &nbsp; &nbsp;<a href="http://www.shjbzx.cn/">沪举报中心</a></p> 
+				</div>
+				<ul class="shareList fl clearfix">
+
+					<li><a href="http://weibo.com/tongjiuniversity"><img src="images/icons/icon-share1.png" alt="" /></a></li>
+
+					<li><a href="wx.htm"><img src="images/icons/icon-share2.png" alt="" /></a></li>
+
+					<li><a href="http://open.tongji.edu.cn/"><img src="images/icons/icon-share3.png" alt="" /></a></li>
+
+					<li>
+
+						<a href="javascript:void(0);" title="手机版" onclick="_vsb_multiscreen.setDevice('mobile')"><img src="images/icons/icon-share4.png" alt="" /></a>
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<i class="xialajt"><img src="images/xialajt.png" alt="" /></i>
+
+	<!-- 代码部分end -->
+	<script type="text/javascript">			// 将按钮和盒子拿出来	
+		var btn = document.getElementsByClassName('button1');			
+		var div = document.getElementsByClassName('content');			// 每一个button上面绑定事件
+		for(var n = 0; n < btn.length; n++) {				//生成闭包的立即函数	
+			(function(i) {
+				btn[n].onclick = function() {
+					for(var m = 0; m < btn.length; m++) {	
+						btn[m].className = "button1"; //清空效果
+						div[m].innerHTML="";				
+						div[m].style.display = "none";		
+					}
+					this.className = "button1 active";			
+					if (div[i].id==="x"){
+						div[i].innerHTML="<iframe src=\"1.html\" width=\"1000\" height=\"660\" frameborder=\"0\" name=\"lab\" scrolling=\"no\" style=\"margin:0 auto\"></iframe>";
+					}else{
+						div[i].innerHTML="<iframe src=\"brain/brain_index.html\" width=\"1000\" height=\"660\" frameborder=\"0\" name=\"lab\" scrolling=\"no\" style=\"margin:0 auto\"></iframe>";
+					};
+					div[i].style.display = "block";
+				}
+			}(n))
+		}	
+	</script>
+
+</body>
+</html>
